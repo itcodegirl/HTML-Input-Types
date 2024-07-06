@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HTML Input Types</title>
+    <meta charset="UTF-8" />
+
+    <link href="src/styles.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    
+    <h1>HTML Input Types</h1>
+
+    <h3>Challenge 1</h3>
+    <p>Create a search input with a label "What's on your mind?"</p>
+    <div>
+
+    <div>
+      <form action="/submit">
+        <label for="email-input">What's on your mind?</label>
+        <input type="email" name="" id="email-input" />
+      </form>
+      <input type="submit" value="Submit" />
+    </div>
+    <h3>Challenge 2</h3>
+    <p>
+      Create a form with a date input asking "What is your birth date?", a
+      submit button "Submit" and the form should send the date to /submit
+    </p>
+    <div>
+      <form action="/submit">
+      <label for='date-input'>What is your birth date?</label>
+    <input type='date' name='birth-date' id='date-input'>
+      </form>
+      <input type="submit" value="Submit">
+    </div>
+    
+
+    <h3>Challenge 3</h3>
+    <p>
+      Create radio inputs asking "What is your favorite primary color?" with
+      blue, yellow and red as options
+    </p>
+    <div>
+      <!-- Radio-->
+       <form action="/submit">
+       <label for="color-input">What is your favorite primary color?</label>
+       <br/>
+       <!-- Hidden radio button, checked by default 
+      
+      -->
+       
+       <br/>
+       <input type="radio" name="color" id="none" style="display:none" checked>
+       <input type="radio" name="color" id="radio-input">
+       <label for="blue">Blue</label>
+       <br/>
+       <input type="radio" name="color" id="radio-input">
+       <label for="bird">Yellow</label>
+       <br/>
+       <input type="radio" name="color" id="radio-input">
+       <label for="fish">Red</label>
+       <br/>
+       <br/>
+       <input type="submit" value="Submit">
+      </form>
+      </div>
+    <h3>Challenge 4</h3>
+    <p>
+      Create checkbox inputs asking "How do you like to travel?" with plane,
+      bus, train, car, walking as options
+    </p>
+    <div>
+      <form action="/submit">
+      <label for="travel-input">How do you like to travel?</label>
+      <br/>
+      <br/>
+      <input type="checkbox" name="travel" id="plane">
+      <label for="dog">Plane</label>
+      <br/>
+      <input type="checkbox" name="travel" id="bus">
+      <label for="cat">Bus</label>
+      <br/>
+      <input type="checkbox" name="travel" id="train">
+      <label for="bird">Train</label>
+      <br/>
+      <input type="checkbox" name="travel" id="car">
+      <label for="fish">Car</label>
+      <br/>
+      <input type="checkbox" name="travel" id="walking">
+      <label for="rabbit">Walking</label>
+      <br/>
+      <br/>
+		<input type="submit" value="Submit">
+		</form>
+    
+
+    <script src="src/index.js"></script>
+  </body>
+</html>
